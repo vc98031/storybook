@@ -1,0 +1,20 @@
+```html
+<!-- MyComponent.stories.svelte -->
+
+<script>
+  import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
+
+  import MyComponent from './MyComponent.svelte';
+</script>
+
+<Meta
+  title="img"
+  component={MyComponent}
+/>
+
+<Template>
+  <MyComponent src="https://storybook.js.org/images/placeholders/350x150.png" alt="My CDN placeholder" />
+</Template>
+
+<Story name="WithAnImage" />
+```
